@@ -1,0 +1,15 @@
+.produts {
+    
+    background-color: #252525;
+    border-radius: 5%;
+    border: 2px solid red;
+    margin-top: 10%;
+
+    
+}
+
+.text {
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}

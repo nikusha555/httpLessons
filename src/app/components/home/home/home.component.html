@@ -1,0 +1,17 @@
+<select #categorySelect (change)='this.selectCategory(categorySelect.value)'>
+    <option *ngFor="let item of this.categories">
+        {{item}}
+    </option>
+</select>
+
+<button (click)="this.loadProductByCategory();" class="bg-slate-500 text-white">არჩევა</button>
+
+<div *ngFor="let items of this.products"  class="produts w-3/4 h-96 flex justify-center flex-col">
+
+    <h1 class="text">{{items.title}}</h1>
+    <p class="text">{{items.description}}</p>
+    <p class="text">{{items.price}}</p>
+    <p class="text">{{items.brand}}</p>
+    <img class="w-52 " src="{{items.thumbnail}}" alt="">
+</div>
+
