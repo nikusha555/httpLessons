@@ -2,8 +2,9 @@
     
     background-color: #252525;
     border-radius: 5%;
-    border: 2px solid red;
+    border: 2px solid yellow;
     margin-top: 10%;
+    text-align: center;
 
     
 }
@@ -11,5 +12,5 @@
 .text {
     color: aliceblue;
     font-family: 'Times New Roman', Times, serif;
-    text-align: center;
+    
 }

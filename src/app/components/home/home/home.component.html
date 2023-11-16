@@ -6,12 +6,16 @@
 
 <button (click)="this.loadProductByCategory();" class="bg-slate-500 text-white">არჩევა</button>
 
-<div *ngFor="let items of this.products"  class="produts w-3/4 h-96 flex justify-center flex-col">
+<div class="flex justify-center flex-row flex-wrap">
+    <div *ngFor="let items of this.products"  class="produts w-80 h-auto  ">
 
-    <h1 class="text">{{items.title}}</h1>
-    <p class="text">{{items.description}}</p>
-    <p class="text">{{items.price}}</p>
-    <p class="text">{{items.brand}}</p>
-    <img class="w-52 " src="{{items.thumbnail}}" alt="">
+        <img class="w-full " src="{{items.thumbnail}}" alt="">
+        <h1 class="text">{{items.title}}</h1>
+        <p class="text">{{items.description}}</p>
+        <p class="  text-yellow-300 ">{{items.price}}$</p>
+        <p class="text">{{items.brand}}</p>
+        
+    </div>
+    
 </div>
 
